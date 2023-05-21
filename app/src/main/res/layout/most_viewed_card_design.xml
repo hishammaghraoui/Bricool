@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="8dp"
+    android:layout_marginLeft="20dp">
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:padding="10dp"
+        >
+        <ImageView
+            android:id="@+id/ms_image"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:src="@drawable/flight"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/ms_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Airplan fixing"
+            android:layout_toRightOf="@+id/ms_image"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/baloo"/>
+        <RatingBar
+            android:id="@+id/ms_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_below="@+id/ms_title"
+            android:layout_toRightOf="@+id/ms_image"
+            android:rating="4.5"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/ms_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I can fix any issue that you have in your fernuture or on your house , i was in this domain for more than 20 years."
+            android:layout_below="@+id/ms_rating"
+            android:layout_toRightOf="@id/ms_image"
+            android:padding="10dp"
+            android:fontFamily="@font/antic"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

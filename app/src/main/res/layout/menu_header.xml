@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/kinda_yallow"
+    android:paddingLeft="15dp">
+    <TextView
+        android:id="@+id/menu_slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search for best service for your need ."
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+      />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BriCool"
+        android:fontFamily="@font/bungee_regular"
+        android:textSize="24sp"
+        android:layout_above="@+id/menu_slogan"
+        android:textColor="@color/black"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logonew"
+        android:layout_above="@id/name"
+        android:layout_marginBottom="-28dp"
+        android:layout_marginLeft="18dp"/>
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="175dp"
+        android:src="@drawable/fixitt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="-20dp"
+        android:layout_marginBottom="10dp"/>
+
+
+</RelativeLayout>

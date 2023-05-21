@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllCategories"
+    android:background="#F7F7F7">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/back_pressed"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:layout_marginLeft="2dp"
+                android:padding="15dp"
+                android:src="@drawable/previous" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:padding="15dp"
+                android:src="@drawable/search" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:textSize="36sp"
+            android:fontFamily="@font/brandon"
+            android:textAllCaps="true"
+            android:padding="10dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/round_bk2"
+                android:layout_margin="20dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baloo"
+                    android:onClick="expandALL"
+                    android:padding="25dp"
+                    android:text="Construction"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:onClick="expandALL"
+                    android:padding="20dp"
+                    android:text="Expend All"
+                    android:textColor="@color/black" />
+
+
+
+
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="250dp"
+                android:src="@drawable/fixitt"
+                android:layout_marginTop="-50dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/round_bk3">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/tt_removebg_preview" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/baloo"
+                android:onClick="expandALL"
+                android:padding="25dp"
+                android:text="Electricien"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/expand_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expend All"
+                android:background="#00000000"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:padding="20dp"/>
+
+
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/food_back"
+                android:layout_margin="20dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/baloo"
+                    android:text="Car Mechanic"
+                    android:textColor="@color/white"
+                    android:padding="25dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:onClick="expandALL"
+                    android:padding="20dp"
+                    android:text="Expend All"
+                    android:textColor="@color/white" />
+
+
+
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="250dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-50dp"
+                android:src="@drawable/worker1" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/round_bk5">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@drawable/worker2"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/baloo"
+                android:onClick="expandALL"
+                android:padding="25dp"
+                android:text="Plumber"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="#00000000"
+                android:onClick="expandALL"
+                android:padding="20dp"
+                android:text="Expend All"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/food_back"
+                android:layout_margin="20dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baloo"
+                    android:onClick="expandALL"
+                    android:padding="25dp"
+                    android:text="Panting"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:onClick="expandALL"
+                    android:padding="20dp"
+                    android:text="Expend All"
+                    android:textColor="@color/white" />
+
+
+
+
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="250dp"
+                android:src="@drawable/worker3"
+                android:layout_marginTop="-50dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

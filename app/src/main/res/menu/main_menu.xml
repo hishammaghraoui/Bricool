@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_home"
+                android:title="Home"
+                android:icon="@drawable/home"/>
+        <item
+            android:id="@+id/nav_search"
+            android:title="Search"
+            android:icon="@drawable/search"/>
+        <item
+            android:id="@+id/all_categories"
+            android:title="All Categories"
+            android:icon="@drawable/categories"/>
+        <item
+            android:id="@+id/Chat"
+            android:title="Chat"
+            android:icon="@drawable/chat"/>
+        <item
+            android:id="@+id/Profile"
+            android:title="Profile"
+            android:icon="@drawable/round_person_black_18dp"/>
+
+
+
+    </group>
+    <item android:title="Most Used Categories">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_Electrician"
+                    android:title="Electrician"
+                    android:icon="@drawable/rounded_plug"/>
+                <item
+                    android:id="@+id/nav_Plumbing"
+                    android:title="Plumbing"
+                    android:icon="@drawable/pipe"/>
+                <item
+                    android:id="@+id/nav_Car"
+                    android:title="Car Mechanic"
+                    android:icon="@drawable/car_repair"/>
+                <item
+                    android:id="@+id/more_catgeroies"
+                    android:title="Other Categories"
+                    android:icon="@drawable/more_information"/>
+
+            </group>
+        </menu>
+    </item>
+    <item android:title="Share">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_Share"
+                    android:title="Share"
+                    android:icon="@drawable/share"/>
+                <item
+                    android:id="@+id/nav_rate"
+                    android:title="Rate Us"
+                    android:icon="@drawable/review"/>
+                <item
+                    android:id="@+id/bug_Report"
+                    android:title="Report a Bug"
+                    android:icon="@drawable/bug_report_fill0_wght400_grad0_opsz48"/>
+
+
+            </group>
+        </menu>
+    </item>
+
+
+
+</menu>

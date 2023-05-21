@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FogetPassword"
+    android:background="@color/white"
+    android:padding="30dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/back"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make Selection"
+            android:layout_marginTop="30dp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/mulish_black"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select which contact detail should we send to rest your password :"
+            android:fontFamily="@font/mulish_black"
+            android:textSize="18sp" />
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="180dp"
+           android:layout_marginTop="50dp"
+           android:background="#e6edf0">
+
+           <ImageView
+               android:id="@+id/mobile"
+               android:layout_width="70dp"
+               android:layout_height="70dp"
+               android:layout_centerVertical="true"
+               android:src="@drawable/smartphone1"
+               android:layout_marginLeft="20dp"
+               android:layout_marginRight="20dp"/>
+           <TextView
+               android:id="@+id/mobile_des"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="18sp"
+               android:fontFamily="@font/mulish_black"
+               android:text="Via Sms : "
+               android:textAllCaps="true"
+               android:layout_toRightOf="@id/mobile"
+               android:layout_marginTop="50dp"/>
+
+           <TextView
+               android:id="@+id/Number_value"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/mobile_des"
+               android:layout_marginTop="10dp"
+               android:layout_toRightOf="@id/mobile"
+               android:fontFamily="@font/mulish_black"
+               android:text="+212605540010"
+               android:textAllCaps="true"
+               android:textColor="@color/black"
+               android:textSize="18sp" />
+
+           <Button
+               android:id="@+id/viaSms"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="#00000000" />
+
+       </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="40dp"
+            android:background="#e6edf0">
+
+            <ImageView
+                android:id="@+id/email_icon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/outgoing_mail"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"/>
+            <TextView
+                android:id="@+id/email_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:fontFamily="@font/mulish_black"
+                android:text="Via Email : "
+                android:textAllCaps="true"
+                android:layout_toRightOf="@id/email_icon"
+                android:layout_marginTop="50dp"/>
+
+            <TextView
+                android:id="@+id/email_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email_des"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/email_icon"
+                android:fontFamily="@font/mulish_black"
+                android:text="Hichammaghroaui17@gmail.com"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

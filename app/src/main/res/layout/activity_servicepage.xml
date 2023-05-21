@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Servicepage"
+    android:background="@drawable/ctr_bg">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:fitsSystemWindows="true"
+       >
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorSecondaryVariant"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            app:title="Electricty  Service"
+            app:expandedTitleMarginBottom="8dp"
+            app:expandedTitleTextColor="@color/white"
+            android:id="@+id/collapsing_toolbar"
+            android:background="@drawable/ctr_bg">
+            <com.denzcoskun.imageslider.ImageSlider
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                app:iss_auto_cycle="true"
+                app:iss_period="3000"
+                app:iss_placeholder="@color/black"
+                app:iss_error_image="@color/purple_500"
+                android:id="@+id/image_slider"
+                app:iss_corner_radius="10"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="50dp"
+                >
+
+
+            </com.denzcoskun.imageslider.ImageSlider>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"/>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layout_bg"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/profile_service"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/p1"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintVertical_bias="0"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="48dp"
+                android:fontFamily="@font/mulish_black"
+                android:text="amin Maghraoui"
+
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/profile_service"
+                app:layout_constraintTop_toTopOf="@+id/profile_service" />
+
+            I
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="28dp"
+                android:text="15/09/22"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/textView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Electricien"
+                app:layout_constraintLeft_toRightOf="@id/profile_service"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                tools:layout_editor_absoluteX="137dp" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="377dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="56dp"
+                android:text="hello, my name is Amin and i have more than 20 years in this job so i can  fix any problem that facing you in your house in top ther is a catagloges of my work ."
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_service" />
+
+            <TextView
+                android:id="@+id/price_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="56dp"
+                android:background="@drawable/opo_msg_back"
+                android:fontFamily="@font/mulish_black"
+                android:fontWeight="500"
+                android:text="30 $"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/btn_contact"
+                app:layout_constraintHorizontal_bias="0.359"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/description" />
+
+            <Button
+                android:id="@+id/btn_contact"
+                android:layout_width="219dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/button_bg"
+                android:backgroundTint="#3a21de"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Contact"
+                android:textAllCaps="true"
+                android:textColorHint="#FF0000"
+                android:textSize="18sp"
+                app:icon="@drawable/chat1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.916"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/description"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/baloo"
+                android:text="Service Description :"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toTopOf="@+id/description"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_service"
+                app:layout_constraintVertical_bias="0.735"
+                tools:ignore="MissingConstraints" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAlignBottom="false"
+        android:clickable="true"
+        android:src="@drawable/heart_shape"
+        app:fabSize="normal"
+        app:layout_anchor="@id/appbar"
+        app:layout_anchorGravity="end|bottom"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#019bd1"
+        android:id="@+id/addtocart"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".successMessage">
+
+    <!--         there will be no back button here!
+    So we can just use only parent liner layout and add gravity="center"-->
+
+
+
+    <TextView
+        android:id="@+id/success_message_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        android:fontFamily="@font/mulish_black"
+        android:gravity="center"
+        android:text="Password Updated"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/success_message_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/verify" />
+
+
+    <TextView
+        android:id="@+id/success_message_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mulish_black"
+        android:gravity="center"
+        android:text="Your password has been Updated !!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/success_message_btn"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/black"
+        android:text="Login"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>
